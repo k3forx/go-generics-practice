@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 
+	"github.com/k3forx/go-generics-practice/type_interface"
 	"github.com/k3forx/go-generics-practice/type_parameter"
 )
 
@@ -15,4 +16,7 @@ func main() {
 
 	stringTree := type_parameter.StringTree.Init("init value")
 	fmt.Printf("stringTree: %+v\n", stringTree)
+
+	p := []int32{1, 2, 3}
+	type_interface.ScaleAndPoint(p)
 }
